@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 01, 2022 at 10:00 AM
+-- Generation Time: Apr 01, 2022 at 10:33 AM
 -- Server version: 8.0.26
 -- PHP Version: 8.0.13
 
@@ -32,8 +32,8 @@ CREATE TABLE IF NOT EXISTS `burrito` (
   `id` int NOT NULL AUTO_INCREMENT,
   `size` enum('20','25','30') NOT NULL,
   `sauce` enum('salsacrudo','salsaverde','salsaroja','creme-friache') NOT NULL,
-  `bean` enum('Bruine Bonen','Zwarte Bonen','Bruine Bonen') NOT NULL,
-  `rice` enum('Bruine Rijst','Zwarte Rijst','Witte Rijst') NOT NULL,
+  `bean` enum('Kidney Bonen','Zwarte Bonen','Bruine Bonen','Geen') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `rice` enum('Bruine Rijst','Zwarte Rijst','Witte Rijst','Geen') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
