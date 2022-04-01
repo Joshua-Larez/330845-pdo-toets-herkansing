@@ -7,9 +7,24 @@ echo "created";
 // variables of post 
 $size = $_POST["Size"];
 $sauce = $_POST["Sauce"];
-$bean = $_POST["Bean"];
-$rice = $_POST["Rice"];
+// $bean = $_POST["Bean"];
+// $rice = $_POST["Rice"];
 
+// if the kruiden is not selected it gives geen, but if there is kruiden selected it will implode kruiden to string.
+if(!isset($_POST['Bean'])){    
+    $bean = 'geen';
+} else {
+    $kruiden = $_POST['Bean'];
+}
+if(!isset($_POST['Rice'])){    
+    $rice = 'geen';
+} else {
+    $rice = $_POST['Rice'];
+}
+
+// prints out the post 
+print_r($bean);
+print_r($rice);
 
 try {
     // make new connection
